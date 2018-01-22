@@ -111,7 +111,6 @@ a {
   .welcome .container .welcome-left {
     line-height: 1; }
     .welcome .container .welcome-left p {
-      font-family: 'Pacifico', cursive;
       line-height: 1.75; }
   .welcome .container .welcome-right {
     grid-template-columns: repeat(6, 1fr);
@@ -267,12 +266,17 @@ a {
     padding-top: 0; }
 
 .button {
+  box-sizing: border-box;
   border: 1px solid #1c191c;
   color: #1c191c;
   padding: 5px 15%;
   font-family: 'Kavivanar';
   margin: 0 auto;
   margin-top: 15px; }
+  .button:hover {
+    background-color: #406523;
+    border: 1px solid #406523;
+    color: #dbd8d8; }
 
 .location-section {
   font-family: sans-serif;
@@ -284,16 +288,33 @@ a {
   text-align: center;
   align-content: center; }
   .location-section .location-content {
-    padding: 20px;
+    background-color: rgba(28, 25, 28, 0.9);
+    padding: 30px 40px;
     margin: 0 auto;
-    background-color: #f4f3ee;
     z-index: 1;
-    opacity: 1; }
+    color: #c3c1c1; }
     .location-section .location-content h4 {
       color: #406523; }
 
-.telephons-section {
+.blog-section {
   min-height: 30vh; }
+  .blog-section .container {
+    max-width: 1000px;
+    text-align: center; }
+    .blog-section .container .blog-content {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 40px; }
+      .blog-section .container .blog-content .blog-item.left {
+        padding: 0 40px; }
+        .blog-section .container .blog-content .blog-item.left h4 {
+          color: #406523;
+          margin-top: 0; }
+        .blog-section .container .blog-content .blog-item.left p {
+          text-align: left;
+          margin-bottom: 40px; }
+      .blog-section .container .blog-content .blog-item.right {
+        background-size: cover;
+        background-position: center; }
 
 .form-section {
   background-image: url("../img/horisontal_drinks.jpg");
@@ -334,7 +355,10 @@ a {
         padding: 8px 25px;
         border: 0;
         outline: none;
-        cursor: pointer; }
+        cursor: pointer;
+        transition: background-color .3s ease; }
+        .form-section .container .form-container .button:hover {
+          background-color: #53832e; }
 
 .main-footer {
   background-color: #1c191c;

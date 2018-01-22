@@ -9,6 +9,7 @@ $darken_text_color: #78726f
 $accent_color: #406523
 $dark_caption: #400704
 $hover_simple_caption: #dfded9
+$light: #dbd8d8
 $gutter: 20px
 $gap: 10px
 
@@ -61,7 +62,6 @@ $gap: 10px
     .welcome-left
       line-height: 1
       p
-        font-family: 'Pacifico', cursive
         line-height: 1.75
     .welcome-right
       grid-template-columns: repeat(6, 1fr)
@@ -221,12 +221,17 @@ $gap: 10px
         padding-top: 0
 
 .button
+  box-sizing: border-box
   border: 1px solid $main_bg_top
   color: $main_bg_top
   padding: 5px 15%
   font-family: 'Kavivanar'
   margin: 0 auto
   margin-top: 15px
+  &:hover
+    background-color: $accent_color
+    border: 1px solid $accent_color
+    color: $light
 
 .location-section
   font-family: sans-serif
@@ -238,16 +243,33 @@ $gap: 10px
   text-align: center
   align-content: center
   .location-content
-    padding: $gutter
+    background-color: rgba(28, 25, 28, 0.9)
+    padding: 30px 40px
     margin: 0 auto
-    background-color: $main_bg
     z-index: 1
-    opacity: 1
+    color: #c3c1c1
     h4
       color: $accent_color
 
-.telephons-section
+.blog-section
   min-height: 30vh
+  .container
+    max-width: 1000px
+    text-align: center
+    .blog-content
+      grid-template-columns: 1fr 1fr
+      grid-gap: 40px
+      .blog-item.left
+        padding: 0 40px
+        h4
+          color: $accent_color
+          margin-top: 0
+        p
+          text-align: left
+          margin-bottom: 40px
+      .blog-item.right
+        background-size: cover
+        background-position: center
 
 .form-section
   background-image: url('../img/horisontal_drinks.jpg')
@@ -289,6 +311,9 @@ $gap: 10px
         border: 0
         outline: none
         cursor: pointer
+        transition: background-color .3s ease
+        &:hover
+          background-color: lighten($accent_color, 8%)
 
 .main-footer
   background-color: $main_bg_top
