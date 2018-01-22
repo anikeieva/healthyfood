@@ -8,6 +8,9 @@
   },
   "author": "Alyona Anikeieva",
   "license": "ISC",
+  "dependencies": {
+    "FortAwesome/Font-Awesome": "*"
+  },
   "devDependencies": {
     "browser-sync": "^2.23.5",
     "gulp": "^3.9.1",

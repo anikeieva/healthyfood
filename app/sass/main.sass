@@ -4,9 +4,11 @@
 $main_bg: #f4f3ee
 $main_bg_top: #1c191c
 $text_color: #8b8b8b
+$text_color_lighter: #b5b5b5
 $darken_text_color: #78726f
 $accent_color: #406523
 $dark_caption: #400704
+$hover_simple_caption: #dfded9
 $gutter: 20px
 $gap: 10px
 
@@ -30,7 +32,6 @@ $gap: 10px
     grid-template-columns: repeat(2, 1fr)
     grid-template-rows: 1fr 1fr
     grid-column-gap: 20px
-    // font-family: 'Alex Brush', cursive
     font-family: 'Pacifico', cursive
     font-weight: 300
     font-size: 70px
@@ -93,15 +94,17 @@ $gap: 10px
   grid-template-columns: 1fr 1fr 1fr
   grid-gap: $gap
   padding: $gap
+  transition: background-color 1.5s ease
   &:hover
     &::before
       background-color: $main_bg_top
       opacity: .5
     .simple-caption.item
+      background-color: $hover_simple_caption
       opacity: 1
       z-index: 1
   .galery-item
-    min-height: 40vh
+    min-height: 50vh
   &::before
     content: ''
     position: absolute
@@ -141,6 +144,17 @@ $gap: 10px
     .services-item
       padding: $gutter
       padding-bottom: 0
+      transition: background-image color .35s ease
+      &:hover
+        color: $darken_text_color
+        .breakfast
+          background-image: url('../img/icons/breakfast_hover.svg')
+        .lunch
+          background-image: url('../img/icons/lunch_hover.svg')
+        .dinner
+          background-image: url('../img/icons/dinner_hover.svg')
+        .custom
+          background-image: url('../img/icons/salad_hover.svg')
       &-img
         height: 100px
         background-size: contain
@@ -161,6 +175,7 @@ $gap: 10px
 
 .reservation-section
   grid-template-columns: 1fr
+  transition: background-color 1.5s ease
   &::before
     content: ''
     position: absolute
@@ -175,10 +190,109 @@ $gap: 10px
       background-color: $main_bg_top
       opacity: .4
     .simple-caption.item
+      background-color: $hover_simple_caption
       opacity: 1
       z-index: 1
   .reservation-content
-    min-height: 40vh
+    min-height: 50vh
     padding: 10px
     text-align: center
     align-content: center
+
+.menu-section
+  .container
+    grid-template-columns: 1fr 1fr
+    .dishes-item
+      padding: 0 40px
+    .menu-item
+      background-size: cover
+      background-position: center
+      text-align: center
+      align-content: center
+      margin: 0 40px
+      .simple-caption.item
+        background-color: rgba(28, 25, 28, .9)
+        span
+          padding-left: 15px
+        span, h2
+          color: white
+    .dishes-item
+      .simple-caption.item
+        padding-top: 0
+
+.button
+  border: 1px solid $main_bg_top
+  color: $main_bg_top
+  padding: 5px 15%
+  font-family: 'Kavivanar'
+  margin: 0 auto
+  margin-top: 15px
+
+.location-section
+  font-family: sans-serif
+  min-height: 60vh
+  background-image: url('../img/maps.png')
+  background-size: cover
+  background-position: center
+  grid-template-columns: 1fr
+  text-align: center
+  align-content: center
+  .location-content
+    padding: $gutter
+    margin: 0 auto
+    background-color: $main_bg
+    z-index: 1
+    opacity: 1
+    h4
+      color: $accent_color
+
+.telephons-section
+  min-height: 30vh
+
+.form-section
+  background-image: url('../img/horisontal_drinks.jpg')
+  background-size: cover
+  background-position: center
+  color: $text_color_lighter
+  font-family: sans-serif
+  .container
+    max-width: 700px
+    padding: 0 $gutter
+    margin: 0 auto
+    grid-template-columns: 1fr
+    text-align: center
+    color: white
+    h4
+      margin-top: 0
+      font-size: 26px
+    .form-container
+      grid-row-gap: $gutter
+      input, textarea
+        border-radius: 10px
+        padding: 10px
+        opacity: .6
+        color: $accent_color
+        border: 0
+        outline: none
+        font-size: 17px
+        &::placeholder
+          color: $accent_color
+          font-weight: bold
+      input
+        height: 4.5vh
+      .button
+        border-radius: 10px
+        font-size: 24px
+        background-color: $accent_color
+        color: white
+        padding: 8px 25px
+        border: 0
+        outline: none
+        cursor: pointer
+
+.main-footer
+  background-color: $main_bg_top
+  color: white
+  text-align: center
+  .footer-copy
+    text-align: center
