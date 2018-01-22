@@ -93,6 +93,13 @@ $gap: 10px
   grid-template-columns: 1fr 1fr 1fr
   grid-gap: $gap
   padding: $gap
+  &:hover
+    &::before
+      background-color: $main_bg_top
+      opacity: .5
+    .simple-caption.item
+      opacity: 1
+      z-index: 1
   .galery-item
     min-height: 40vh
   &::before
@@ -107,18 +114,71 @@ $gap: 10px
   .galery-item.grid
     text-align: center
     align-content: center
-    .simple-caption
-      max-width: 182px
+
+.simple-caption.item
+  opacity: 1
+  max-width: 182px
+  z-index: 1
+  background-color: $main_bg
+  margin: 0 auto
+  line-height: 1.4
+  padding: 15px
+  padding-right: 30px
+  span
+    font-size: 40px
+  h2
+    text-align: center
+    font-size: 16px
+    padding-left: 15px
+
+.services-section
+  .simple-caption
+    padding-top: 0
+    padding-bottom: 30px
+  .services-container
+    grid-template-columns: repeat(4, 1fr)
+    text-align: center
+    .services-item
+      padding: $gutter
+      padding-bottom: 0
+      &-img
+        height: 100px
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center
+        &.breakfast
+          background-image: url('../img/icons/breakfast.svg')
+        &.lunch
+          background-image: url('../img/icons/lunch.svg')
+        &.dinner
+          background-image: url('../img/icons/dinner.svg')
+        &.custom
+          background-image: url('../img/icons/salad.svg')
+      h4, p
+        margin-bottom: 0
+      h4
+        font-family: 'Eagle Lake', cursive
+
+.reservation-section
+  grid-template-columns: 1fr
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: $main_bg_top
+    opacity: .1
+  &:hover
+    &::before
+      background-color: $main_bg_top
+      opacity: .4
+    .simple-caption.item
+      opacity: 1
       z-index: 1
-      background-color: $main_bg
-      margin: 0 auto
-      line-height: 1.4
-      padding: 15px
-      padding-right: 30px
-      cursor: pointer
-      span
-        font-size: 40px
-      h2
-        text-align: center
-        font-size: 16px
-        padding-left: 15px
+  .reservation-content
+    min-height: 40vh
+    padding: 10px
+    text-align: center
+    align-content: center

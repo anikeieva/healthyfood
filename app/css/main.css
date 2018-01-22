@@ -9,7 +9,7 @@ html {
 body {
   font-size: 16px;
   line-height: 1.75;
-  font-family: sans-serif;
+  font-family: 'Pacifico', cursive;
   overflow-x: hidden;
   opacity: 1;
   min-width: 320px;
@@ -24,6 +24,11 @@ body {
 
 h1, h2 {
   margin: 0; }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #8b8b8b; }
 
 @font-face {
   font-family: 'Indie Flower';
@@ -138,6 +143,12 @@ h1, h2 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   padding: 10px; }
+  .galery-section:hover::before {
+    background-color: #1c191c;
+    opacity: .5; }
+  .galery-section:hover .simple-caption.item {
+    opacity: 1;
+    z-index: 1; }
   .galery-section .galery-item {
     min-height: 40vh; }
   .galery-section::before {
@@ -152,18 +163,70 @@ h1, h2 {
   .galery-section .galery-item.grid {
     text-align: center;
     align-content: center; }
-    .galery-section .galery-item.grid .simple-caption {
-      max-width: 182px;
-      z-index: 1;
-      background-color: #f4f3ee;
-      margin: 0 auto;
-      line-height: 1.4;
-      padding: 15px;
-      padding-right: 30px;
-      cursor: pointer; }
-      .galery-section .galery-item.grid .simple-caption span {
-        font-size: 40px; }
-      .galery-section .galery-item.grid .simple-caption h2 {
-        text-align: center;
-        font-size: 16px;
-        padding-left: 15px; }
+
+.simple-caption.item {
+  opacity: 1;
+  max-width: 182px;
+  z-index: 1;
+  background-color: #f4f3ee;
+  margin: 0 auto;
+  line-height: 1.4;
+  padding: 15px;
+  padding-right: 30px; }
+  .simple-caption.item span {
+    font-size: 40px; }
+  .simple-caption.item h2 {
+    text-align: center;
+    font-size: 16px;
+    padding-left: 15px; }
+
+.services-section .simple-caption {
+  padding-top: 0;
+  padding-bottom: 30px; }
+
+.services-section .services-container {
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center; }
+  .services-section .services-container .services-item {
+    padding: 20px;
+    padding-bottom: 0; }
+    .services-section .services-container .services-item-img {
+      height: 100px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+      .services-section .services-container .services-item-img.breakfast {
+        background-image: url("../img/icons/breakfast.svg"); }
+      .services-section .services-container .services-item-img.lunch {
+        background-image: url("../img/icons/lunch.svg"); }
+      .services-section .services-container .services-item-img.dinner {
+        background-image: url("../img/icons/dinner.svg"); }
+      .services-section .services-container .services-item-img.custom {
+        background-image: url("../img/icons/salad.svg"); }
+    .services-section .services-container .services-item h4, .services-section .services-container .services-item p {
+      margin-bottom: 0; }
+    .services-section .services-container .services-item h4 {
+      font-family: 'Eagle Lake', cursive; }
+
+.reservation-section {
+  grid-template-columns: 1fr; }
+  .reservation-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1c191c;
+    opacity: .1; }
+  .reservation-section:hover::before {
+    background-color: #1c191c;
+    opacity: .4; }
+  .reservation-section:hover .simple-caption.item {
+    opacity: 1;
+    z-index: 1; }
+  .reservation-section .reservation-content {
+    min-height: 40vh;
+    padding: 10px;
+    text-align: center;
+    align-content: center; }
