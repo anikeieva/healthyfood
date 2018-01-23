@@ -82,7 +82,7 @@ a {
     left: -26%;
     width: 26%;
     height: 100vh;
-    background-color: rgba(28, 23, 26, 0.8); }
+    background-color: rgba(28, 23, 26, 0.85); }
     .main_header #sideBar.active {
       left: 0; }
     .main_header #sideBar .toggle-btn {
@@ -99,18 +99,23 @@ a {
         .main_header #sideBar .toggle-btn span:last-child {
           margin-bottom: 0; }
     .main_header #sideBar .menu {
+      height: 100%;
       margin: 0;
       padding-left: 0;
-      background-color: none; }
-      .main_header #sideBar .menu li {
-        padding: 30px 20px;
-        list-style: none;
-        border-bottom: 1px solid #8b8b8b;
+      background-color: none;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(7, 1fr);
+      text-align: center;
+      align-content: center; }
+      .main_header #sideBar .menu a {
+        padding: 0 20px;
         color: white;
-        font-size: 20px;
-        cursor: pointer; }
-        .main_header #sideBar .menu li:last-child {
+        font-size: 24px;
+        align-content: center; }
+        .main_header #sideBar .menu a:last-child {
           border-bottom: 0; }
+        .main_header #sideBar .menu a:hover {
+          background-color: rgba(28, 23, 26, 0.98); }
   .main_header .header-caption {
     padding-top: 100px;
     margin: 0 auto;
