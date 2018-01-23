@@ -26,6 +26,41 @@ $gap: 10px
   grid-template: 1fr
   align-content: center
   text-align: center
+  #sideBar
+    z-index: 1
+    position: fixed
+    left: -26%
+    width: 26%
+    height: 100vh
+    background-color: rgba(28, 23, 26, .8)
+    &.active
+      left: 0
+    .toggle-btn
+      position: absolute
+      left: 108%
+      top: 3vh
+      cursor: pointer
+      span
+        display: block
+        width: 35px
+        height: 5px
+        background-color: $main_bg_top
+        margin-bottom: 5px
+        &:last-child
+          margin-bottom: 0
+    .menu
+      margin: 0
+      padding-left: 0
+      background-color: none
+      li
+        padding: 30px 20px
+        list-style: none
+        border-bottom: 1px solid $text_color
+        color: white
+        font-size: 20px
+        cursor: pointer
+        &:last-child
+          border-bottom: 0
   .header-caption
     padding-top: 100px
     margin: 0 auto

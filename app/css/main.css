@@ -76,6 +76,41 @@ a {
   grid-template: 1fr;
   align-content: center;
   text-align: center; }
+  .main_header #sideBar {
+    z-index: 1;
+    position: fixed;
+    left: -26%;
+    width: 26%;
+    height: 100vh;
+    background-color: rgba(28, 23, 26, 0.8); }
+    .main_header #sideBar.active {
+      left: 0; }
+    .main_header #sideBar .toggle-btn {
+      position: absolute;
+      left: 108%;
+      top: 3vh;
+      cursor: pointer; }
+      .main_header #sideBar .toggle-btn span {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: #1c191c;
+        margin-bottom: 5px; }
+        .main_header #sideBar .toggle-btn span:last-child {
+          margin-bottom: 0; }
+    .main_header #sideBar .menu {
+      margin: 0;
+      padding-left: 0;
+      background-color: none; }
+      .main_header #sideBar .menu li {
+        padding: 30px 20px;
+        list-style: none;
+        border-bottom: 1px solid #8b8b8b;
+        color: white;
+        font-size: 20px;
+        cursor: pointer; }
+        .main_header #sideBar .menu li:last-child {
+          border-bottom: 0; }
   .main_header .header-caption {
     padding-top: 100px;
     margin: 0 auto;
