@@ -165,6 +165,9 @@ a {
   .galery-section .galery-item.grid {
     text-align: center;
     align-content: center; }
+    .galery-section .galery-item.grid .simple-caption.item {
+      padding-left: 25px;
+      padding-right: 40px; }
 
 .simple-caption.item {
   opacity: 1;

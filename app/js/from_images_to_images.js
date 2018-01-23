@@ -9,7 +9,7 @@ function ready() {
   }
 
   function oldImages() {
-    biggerWelcomeTasty.style.backgroundImage = 'url(../img/hf.jpg)';
+    biggerWelcomeTasty.style.backgroundImage = 'url(../img/1.jpg)';
     smallerWelcomeTasty.style.backgroundImage = 'url(../img/drink.jpg)';
   }
 
