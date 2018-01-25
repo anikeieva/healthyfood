@@ -1,8 +1,13 @@
-function activeMenu() {
-  var sideBar = document.getElementById('sideBar');
-  var toggleBtn = document.getElementsByClassName('toggle-btn');
+function ready() {
+  var toggleBtn = document.getElementsByClassName('toggle-btn')[0];
 
-  sideBar.classList.toggle('active');
+  function activeMenu() {
+    var sideBar = document.getElementById('sideBar');
+
+    sideBar.classList.toggle('active');
+  }
+
+  toggleBtn.addEventListener('click', activeMenu);
 }
 
-addEventListener('click', activeMenu);
+document.addEventListener("DOMContentLoaded", ready);
