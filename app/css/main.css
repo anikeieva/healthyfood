@@ -133,6 +133,7 @@ a {
       grid-row: 1;
       line-height: 1; }
     .main_header .header-caption .caption_food {
+      text-align: end;
       grid-column: 2;
       grid-row: 2;
       line-height: .6; }
@@ -318,8 +319,14 @@ a {
         padding-left: 15px; }
       .menu-section .container .menu-item .simple-caption.item span, .menu-section .container .menu-item .simple-caption.item h2 {
         color: white; }
-  .menu-section .container .dishes-item .simple-caption.item {
-    padding-top: 0; }
+  .menu-section .container .dishes-item {
+    justify-items: center;
+    grid-template-columns: 1fr;
+    align-content: center;
+    text-align: center; }
+    .menu-section .container .dishes-item .simple-caption.item {
+      padding-top: 0;
+      margin: 0; }
 
 .button {
   box-sizing: border-box;
@@ -380,23 +387,17 @@ a {
   font-family: sans-serif; }
   .form-section .container {
     max-width: 700px;
-    min-width: 280px;
-    width: 100%;
-    padding: 0 20px;
-    grid-template-columns: 1fr;
+    min-width: 300px;
     text-align: center;
-    color: white;
-    align-items: center;
-    justify-items: center; }
-    .form-section .container h4 {
-      margin-top: 0;
-      font-size: 26px; }
+    color: white; }
     .form-section .container .form-container {
-      max-width: 660px;
-      min-width: 280px;
       width: 100%;
       grid-row-gap: 20px; }
+      .form-section .container .form-container h4 {
+        margin: 0;
+        font-size: 26px; }
       .form-section .container .form-container input, .form-section .container .form-container textarea {
+        width: 100%;
         display: block;
         border-radius: 10px;
         padding: 10px;
@@ -476,9 +477,12 @@ a {
     grid-row-gap: 20px; } }
 
 @media only screen and (max-width: 768px) {
-  .main_header #sideBar {
-    left: -50%;
-    width: 50%; }
+  .main_header {
+    padding-left: 45px;
+    padding-right: 45px; }
+    .main_header #sideBar {
+      left: -50%;
+      width: 50%; }
   .menu-section .container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1.5fr;
@@ -487,4 +491,62 @@ a {
     .menu-section .container .menu-item {
       grid-area: m; }
     .menu-section .container .dishes-item {
-      grid-area: d; } }
+      grid-area: d; }
+  .welcome .container {
+    grid-column-gap: 20px; }
+    .welcome .container > div {
+      padding: 0; }
+  .form-section .container {
+    padding: 0 30px; } }
+
+@media only screen and (max-width: 510px) {
+  .main_header .header-caption {
+    padding-top: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 50px; }
+    .main_header .header-caption .caption_healthy {
+      text-align: center; }
+    .main_header .header-caption .caption_food {
+      text-align: center;
+      grid-column: 1;
+      grid-row: 2; } }
+
+@media only screen and (max-width: 480px) {
+  .main_header #sideBar {
+    left: -80%;
+    width: 80%; }
+    .main_header #sideBar .toggle-btn {
+      left: 108%; }
+  .galery {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "f" "s" "th"; }
+    .galery .galery-item {
+      min-height: 33vh; }
+      .galery .galery-item.first {
+        grid-area: f; }
+      .galery .galery-item.second {
+        grid-area: s; }
+      .galery .galery-item.third {
+        grid-area: th; }
+  .services-section .container .services-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 20px; }
+  .welcome .container {
+    padding: 0 30px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1.5fr;
+    grid-row-gap: 20px;
+    grid-template-areas: "l l l l l l" ". r r r r .";
+    text-align: center; }
+    .welcome .container .welcome-left {
+      grid-area: l;
+      grid-row: 1;
+      height: auto; }
+    .welcome .container .welcome-right {
+      grid-area: r;
+      grid-row: 2;
+      max-width: 300px; } }
