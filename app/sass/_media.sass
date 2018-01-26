@@ -32,6 +32,10 @@
             grid-area: l
           &.right
             grid-area: r
+  .welcome
+    .container
+      .welcome-right
+        padding: 0 50px
 
   .services-section
     .container
@@ -55,7 +59,6 @@
       .welcome-left
         padding: 0
       .welcome-right
-        padding: 0
         & > div
           min-height: 18vh
           padding: 0
@@ -80,6 +83,12 @@
   .form-section
     .container
       padding: 0 30px
+
+@media only screen and (max-width : 650px)
+  .welcome
+    .container
+      .welcome-right
+        padding: 0 35px
 
 @media only screen and (max-width : 550px)
   .content-section
@@ -186,10 +195,6 @@
         .blog-item.left
           padding: 0
 
-// @media only screen and (max-width : 400px)
-//   .welcome
-//     .container
-//       grid-template-rows: 1fr 1fr
 
 @media only screen and (max-width : 370px)
   .welcome
@@ -200,5 +205,34 @@
       .welcome-right
         padding: 0 30px
 
+// Horisontal
+@media only screen and (max-height : 580px)
+  .main_header
+    min-height: 100vh
 
-// @media only screen and (max-width : 320px)
+  .welcome
+    .container
+      .welcome-right > div
+        min-height: 40vh
+
+  .galery
+    .galery-item
+      min-height: 50vh
+
+  .reservation-section
+    .reservation-content
+      min-height: 99vh
+
+  .location-section
+    min-height: 80vh
+
+@media only screen and (max-height : 414px)
+  .form-section
+    .container
+      .form-container
+        grid-row-gap: 15px
+        h4
+          margin: 0
+          font-size: 23px
+        input, textarea
+          font-size: 18px

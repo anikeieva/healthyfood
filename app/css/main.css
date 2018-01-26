@@ -368,6 +368,8 @@ a {
       grid-template-columns: 1fr 1fr;
       grid-gap: 40px; }
       .blog-section .container .blog-content .blog-item.left {
+        grid-template-columns: 1fr;
+        align-content: center;
         padding: 0 40px; }
         .blog-section .container .blog-content .blog-item.left h4 {
           color: #406523;
@@ -405,20 +407,18 @@ a {
         color: #406523;
         border: 0;
         outline: none;
-        font-size: 17px; }
+        font-size: 20px; }
         .form-section .container .form-container input::placeholder, .form-section .container .form-container textarea::placeholder {
           color: #406523;
           font-weight: bold; }
-      .form-section .container .form-container input {
-        height: 4.5vh; }
       .form-section .container .form-container textarea {
-        height: auto; }
+        min-height: 24vh; }
       .form-section .container .form-container .button {
         border-radius: 10px;
         font-size: 24px;
         background-color: #406523;
         color: white;
-        padding: 8px 25px;
+        padding: 15px 35px;
         margin-top: 0;
         border: 0;
         outline: none;
@@ -471,6 +471,8 @@ a {
         grid-area: l; }
       .blog-section .container .blog-content .blog-item.right {
         grid-area: r; }
+  .welcome .container .welcome-right {
+    padding: 0 50px; }
   .services-section .container .services-container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -488,11 +490,9 @@ a {
     grid-column-gap: 30px; }
     .welcome .container .welcome-left {
       padding: 0; }
-    .welcome .container .welcome-right {
+    .welcome .container .welcome-right > div {
+      min-height: 18vh;
       padding: 0; }
-      .welcome .container .welcome-right > div {
-        min-height: 18vh;
-        padding: 0; }
   .blog-section .container .blog-content .blog-item.right {
     margin: 0 30px; }
   .menu-section .container {
@@ -506,6 +506,10 @@ a {
       grid-area: d; }
   .form-section .container {
     padding: 0 30px; } }
+
+@media only screen and (max-width: 650px) {
+  .welcome .container .welcome-right {
+    padding: 0 35px; } }
 
 @media only screen and (max-width: 550px) {
   .content-section {
@@ -594,3 +598,24 @@ a {
     grid-template-areas: "l" "r"; }
     .welcome .container .welcome-right {
       padding: 0 30px; } }
+
+@media only screen and (max-height: 580px) {
+  .main_header {
+    min-height: 100vh; }
+  .welcome .container .welcome-right > div {
+    min-height: 40vh; }
+  .galery .galery-item {
+    min-height: 50vh; }
+  .reservation-section .reservation-content {
+    min-height: 99vh; }
+  .location-section {
+    min-height: 80vh; } }
+
+@media only screen and (max-height: 414px) {
+  .form-section .container .form-container {
+    grid-row-gap: 15px; }
+    .form-section .container .form-container h4 {
+      margin: 0;
+      font-size: 23px; }
+    .form-section .container .form-container input, .form-section .container .form-container textarea {
+      font-size: 18px; } }
