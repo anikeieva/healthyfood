@@ -1,11 +1,61 @@
-// @media only screen and (max-width : 1200px)
+@media only screen and (max-width : 1400px)
+  .main_header
+    #sideBar
+      left: -35%
+      width: 35%
+
+@media only screen and (max-width : 1200px)
+  .galery
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    grid-template-areas: "f th" "s s"
+    .galery-item
+      min-height: 33vh
+      &.first
+        grid-area: f
+      &.second
+        grid-area: s
+      &.third
+        grid-area: th
 
 
-// @media only screen and (max-width : 992px)
+@media only screen and (max-width : 992px)
+  .blog-section
+    .container
+      .blog-content
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 1fr 1.5fr
+        grid-template-areas: "r" "r" "l"
+        .blog-item
+          min-height: 0
+          &.left
+            grid-area: l
+          &.right
+            grid-area: r
 
+  .services-section
+    .container
+      .services-container
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 1fr
+        grid-row-gap: $gutter
 
-// @media only screen and (max-width : 768px)
+@media only screen and (max-width : 768px)
+  .main_header
+    #sideBar
+      left: -50%
+      width: 50%
 
+  .menu-section
+    .container
+      grid-template-columns: 1fr
+      grid-template-rows: 1fr 1fr 1.5fr
+      grid-template-areas: "m" "m" "d"
+      grid-row-gap: 50px
+      .menu-item
+        grid-area: m
+      .dishes-item
+        grid-area: d
 
 // @media only screen and (max-width : 480px)
 
