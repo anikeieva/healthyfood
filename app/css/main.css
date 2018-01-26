@@ -481,23 +481,74 @@ a {
     padding-left: 45px;
     padding-right: 45px; }
     .main_header #sideBar {
-      left: -50%;
-      width: 50%; }
+      left: -60%;
+      width: 60%; }
+  .welcome .container {
+    padding: 0 40px;
+    grid-column-gap: 30px; }
+    .welcome .container .welcome-left {
+      padding: 0; }
+    .welcome .container .welcome-right {
+      padding: 0; }
+      .welcome .container .welcome-right > div {
+        min-height: 18vh;
+        padding: 0; }
+  .blog-section .container .blog-content .blog-item.right {
+    margin: 0 30px; }
   .menu-section .container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1.5fr;
     grid-template-areas: "m" "m" "d";
-    grid-row-gap: 50px; }
+    grid-row-gap: 40px; }
     .menu-section .container .menu-item {
       grid-area: m; }
     .menu-section .container .dishes-item {
       grid-area: d; }
-  .welcome .container {
-    grid-column-gap: 20px; }
-    .welcome .container > div {
-      padding: 0; }
   .form-section .container {
     padding: 0 30px; } }
+
+@media only screen and (max-width: 550px) {
+  .content-section {
+    padding: 60px 0; }
+  .galery {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "f" "s" "th"; }
+    .galery .galery-item {
+      min-height: 33vh; }
+      .galery .galery-item.first {
+        grid-area: f; }
+      .galery .galery-item.second {
+        grid-area: s; }
+      .galery .galery-item.third {
+        grid-area: th; }
+  .welcome .container {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1.5fr;
+    grid-row-gap: 20px;
+    grid-template-areas: "l l l l l l" ". r r r r .";
+    text-align: center; }
+    .welcome .container .welcome-left {
+      grid-area: l;
+      grid-row: 1;
+      height: auto; }
+      .welcome .container .welcome-left p {
+        padding-top: 20px; }
+    .welcome .container .welcome-right {
+      padding: 0 30px;
+      grid-area: r;
+      grid-row: 2;
+      max-width: 300px; }
+      .welcome .container .welcome-right > div {
+        min-height: 0; }
+  .menu-section .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "m" "d"; }
+  .blog-section .container .blog-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "r" "l"; } }
 
 @media only screen and (max-width: 510px) {
   .main_header .header-caption {
@@ -511,7 +562,9 @@ a {
     .main_header .header-caption .caption_food {
       text-align: center;
       grid-column: 1;
-      grid-row: 2; } }
+      grid-row: 2; }
+  .welcome .container .welcome-right {
+    padding: 0; } }
 
 @media only screen and (max-width: 480px) {
   .main_header #sideBar {
@@ -519,34 +572,25 @@ a {
     width: 80%; }
     .main_header #sideBar .toggle-btn {
       left: 108%; }
-  .galery {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "f" "s" "th"; }
-    .galery .galery-item {
-      min-height: 33vh; }
-      .galery .galery-item.first {
-        grid-area: f; }
-      .galery .galery-item.second {
-        grid-area: s; }
-      .galery .galery-item.third {
-        grid-area: th; }
+  .welcome .container {
+    grid-template-rows: 1fr 1fr; }
   .services-section .container .services-container {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     grid-row-gap: 20px; }
+  .menu-section .container .menu-item {
+    margin: 0; }
+  .menu-section .container .dishes-item {
+    padding: 0; }
+  .blog-section .container .blog-content .blog-item.right {
+    margin: 0; }
+  .blog-section .container .blog-content .blog-item.left {
+    padding: 0; } }
+
+@media only screen and (max-width: 370px) {
   .welcome .container {
-    padding: 0 30px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr 1.5fr;
-    grid-row-gap: 20px;
-    grid-template-areas: "l l l l l l" ". r r r r .";
-    text-align: center; }
-    .welcome .container .welcome-left {
-      grid-area: l;
-      grid-row: 1;
-      height: auto; }
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "l" "r"; }
     .welcome .container .welcome-right {
-      grid-area: r;
-      grid-row: 2;
-      max-width: 300px; } }
+      padding: 0 30px; } }
