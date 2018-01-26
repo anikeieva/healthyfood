@@ -4,13 +4,13 @@ function ready() {
   var smallerWelcomeTasty = document.getElementsByClassName('smaller_welcome_tasty')[0];
 
   function newImages() {
-    biggerWelcomeTasty.style.backgroundImage = 'url(img/main3.jpg)';
-    smallerWelcomeTasty.style.backgroundImage = 'url(img/4.jpg)';
+    biggerWelcomeTasty.style.backgroundImage = 'url(../img/main3.jpg)';
+    smallerWelcomeTasty.style.backgroundImage = 'url(../img/4.jpg)';
   }
 
   function oldImages() {
-    biggerWelcomeTasty.style.backgroundImage = 'url(img/1.jpg)';
-    smallerWelcomeTasty.style.backgroundImage = 'url(img/drink.jpg)';
+    biggerWelcomeTasty.style.backgroundImage = 'url(../img/1.jpg)';
+    smallerWelcomeTasty.style.backgroundImage = 'url(../img/drink.jpg)';
   }
 
   var counter = 1;
