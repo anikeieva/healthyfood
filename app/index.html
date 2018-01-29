@@ -4,10 +4,12 @@
 	<meta name="viewport" content="width = device-width, initial-scale = 1, maximum-scale = 1"  charset="utf-8">
 	<title>Helthy food</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <header class="main_header grid">
 
+  <header class="main_header grid">
+			<a class="anchor" name="header"></a>
 			<div id="sideBar">
 				<div class="toggle-btn">
 					<span></span>
@@ -15,13 +17,14 @@
 					<span></span>
 				</div>
 				<div class="menu grid">
-					<a href="https://reactjs.org/" class="grid">About</a>
-					<a href="#" class="grid">Galery</a>
-					<a href="#" class="grid">Main Services</a>
-					<a href="#" class="grid">Make Reservation</a>
-					<a href="#" class="grid">Menu</a>
-					<a href="#" class="grid">Blog</a>
-					<a href="#" class="grid">Contacts</a>
+					<a href="#welcome" class="grid">About</a>
+					<a href="#galery" class="grid">Galery</a>
+					<a href="#services" class="grid">Main Services</a>
+					<a href="#reservation" class="grid">Make Reservation</a>
+					<a href="#menu" class="grid">Menu</a>
+					<a href="#location" class="grid">Location</a>
+					<a href="#blog" class="grid">Blog</a>
+					<a href="#contacts" class="grid">Contacts</a>
 				</div>
 			</div>
 
@@ -33,14 +36,15 @@
   </header>
 
 	<section class="content-section welcome">
+		<a class="anchor" name="welcome"></a>
 		<div class="container grid">
-			<div class="welcome-left">
+			<a href="#" class="welcome-left">
 				<div class="simple-caption">
 					<span>Welcome</span>
 					<h2>to the Helthy food</h2>
 				</div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-			</div>
+			</a>
 			<div class="welcome-right grid">
 				<div class="bigger_welcome_tasty" style="background-image: url('img/1.jpg'); background-size: cover; background-position: center;"></div>
 				<div class="smaller_welcome_tasty" style="background-image: url('img/drink.jpg'); background-size: cover; background-position: center;"></div>
@@ -49,6 +53,7 @@
 	</section>
 
 	<section class="galery-section galery grid">
+		<a class="anchor" name="galery"></a>
 		<div class="galery-item first" style="background-image: url('img/dishes/soup.jpg'); background-size: cover; background-position: center;"></div>
 		<div class="galery-item grid second" style="background-image: url('img/dishes/salmon.jpg'); background-size: cover; background-position: center;">
 			<a class="simple-caption item">
@@ -60,6 +65,7 @@
 	</section>
 
 	<section class="content-section services-section">
+		<a class="anchor" name="services"></a>
 		<div class="container grid">
 			<div class="simple-caption item">
 				<span>Main</span>
@@ -70,7 +76,7 @@
 					<span class="services-item-img breakfast"></span></span>
 					<span class="services-item-content grid">
 						<h4>Breakfast</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. Ut enim ad minim veniam...</p>
+						<p>Lorem ipsum dolor sit amet  outline: none, consectetur adipisicing elit, sed do eiusmod tempor. Ut enim ad minim veniam...</p>
 					</span>
 				</a>
 
@@ -102,7 +108,7 @@
 	</section>
 
 	<section class="galery-section grid reservation-section">
-		<a class="reservation-content grid" style="background-image: url('img/reservation.jpeg'); background-size: cover; background-position: center;">
+		<a name="reservation" class="reservation-content grid" style="background-image: url('img/reservation.jpeg'); background-size: cover; background-position: center;">
 			<div class="simple-caption item">
 				<span>Make</span>
 				<h2>RESERVATIONS</h2>
@@ -111,6 +117,7 @@
 	</section>
 
 	<section class="content-section menu-section">
+		<a class="anchor" name="menu"></a>
 		<div class="container grid">
 
 				<a class="menu-item grid" style="background-image: url('img/dishes/Healthy-Ground.jpg')">
@@ -133,6 +140,7 @@
 	</section>
 
 	<section class="galery-section location-section grid">
+		<a class="anchor" name="location"></a>
 		<div class="location-content">
 			<h4>LOCATION</h4>
 			<p>Lorem ipsum dolor sit amet</p>
@@ -143,6 +151,7 @@
 	</section>
 
 	<section class="content-section blog-section">
+		<a class="anchor" name="blog"></a>
 		<div class="container grid">
 			<div class="blog-content grid">
 				<div class="blog-item left grid">
@@ -159,27 +168,30 @@
 	</section>
 
 	<section class="content-section form-section">
-		<div class="container">
-			<form class="form-container grid">
-				<h4>Want to contact with us? Sent a message</h4>
-				<div>
-					<input type="text" placeholder="Your name" />
-				</div>
-				<div>
-					<input type="text" placeholder="Company name (if those is)" />
-				</div>
-				<div>
-					<input type="text" placeholder="Email adress" />
-				</div>
-				<div>
-					<textarea placeholder="Message..."></textarea>
-				</div>
-				<div>
-					<button class="button">Submit</button>
-				<div>
-			</form>
-
-		</div>
+		<a class="anchor" name="contacts"></a>
+		<a href="#header" class="angle">
+			<i class="fa fa-angle-up" aria-hidden="true"></i>
+		</a>
+			<div class="container">
+				<form class="form-container grid">
+					<h4>Want to contact with us? Sent a message</h4>
+					<div>
+						<input type="text" placeholder="Your name" />
+					</div>
+					<div>
+						<input type="text" placeholder="Company name (if those is)" />
+					</div>
+					<div>
+						<input type="text" placeholder="Email adress" />
+					</div>
+					<div>
+						<textarea placeholder="Message..."></textarea>
+					</div>
+					<div>
+						<button class="button">Submit</button>
+					<div>
+				</form>
+			</div>
 	</section>
 
 	<footer class="content-section main-footer grid">
