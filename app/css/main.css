@@ -95,8 +95,8 @@ section, header, footer {
   .main_header #sideBar {
     z-index: 4;
     position: fixed;
-    left: -30%;
-    width: 30%;
+    left: -23%;
+    width: 23%;
     height: 100vh;
     background-color: rgba(28, 23, 26, 0.85); }
     .main_header #sideBar.active {
@@ -106,14 +106,14 @@ section, header, footer {
       left: calc(100% + 30px);
       top: 3vh;
       cursor: pointer; }
-      .main_header #sideBar .toggle-btn span {
-        display: block;
-        width: 35px;
-        height: 5px;
-        background-color: #1c191c;
-        margin-bottom: 5px; }
-        .main_header #sideBar .toggle-btn span:last-child {
-          margin-bottom: 0; }
+      .main_header #sideBar .toggle-btn i {
+        font-size: 40px;
+        color: #1c191c; }
+        .main_header #sideBar .toggle-btn i.fa-times {
+          font-size: 45px;
+          transition: transform .5s ease; }
+          .main_header #sideBar .toggle-btn i.fa-times:hover {
+            transform: rotate(90deg); }
     .main_header #sideBar .menu {
       height: 100%;
       margin: 0;
@@ -212,7 +212,7 @@ section, header, footer {
   text-align: center; }
   .galery-section:hover::before {
     background-color: #1c191c;
-    opacity: .5; }
+    opacity: .3; }
   .galery-section:hover .simple-caption.item {
     background-color: #dfded9;
     opacity: 1;
@@ -307,7 +307,7 @@ section, header, footer {
     opacity: .1; }
   .reservation-section:hover::before {
     background-color: #1c191c;
-    opacity: .4; }
+    opacity: .3; }
   .reservation-section:hover .simple-caption.item {
     background-color: #dfded9;
     opacity: 1;

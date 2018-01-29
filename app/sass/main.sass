@@ -45,8 +45,8 @@ section, header, footer
   #sideBar
     z-index: 4
     position: fixed
-    left: -30%
-    width: 30%
+    left: -23%
+    width: 23%
     height: 100vh
     background-color: rgba(28, 23, 26, .85)
     &.active
@@ -56,14 +56,15 @@ section, header, footer
       left: calc(100% + 30px)
       top: 3vh
       cursor: pointer
-      span
-        display: block
-        width: 35px
-        height: 5px
-        background-color: $main_bg_top
-        margin-bottom: 5px
-        &:last-child
-          margin-bottom: 0
+      i
+        font-size: 40px
+        color: $main_bg_top
+        &.fa-times
+          font-size: 45px
+          transition: transform .5s ease
+          &:hover
+            transform: rotate(90deg)
+
     .menu
       height: 100%
       margin: 0
@@ -165,7 +166,7 @@ section, header, footer
   &:hover
     &::before
       background-color: $main_bg_top
-      opacity: .5
+      opacity: .3
     .simple-caption.item
       background-color: $hover_simple_caption
       opacity: 1
@@ -262,7 +263,7 @@ section, header, footer
   &:hover
     &::before
       background-color: $main_bg_top
-      opacity: .4
+      opacity: .3
     .simple-caption.item
       background-color: $hover_simple_caption
       opacity: 1
