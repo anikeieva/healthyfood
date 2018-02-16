@@ -12,6 +12,16 @@ function ready() {
   }
 
   toggleBtn.addEventListener('click', activeMenu);
+
+  var menu = document.getElementsByClassName('menu')[0];
+
+  function choose_point() {
+    sideBar.classList.toggle('active');
+    menu_icon.classList.toggle('fa-bars');
+    menu_icon.classList.toggle('fa-times');
+  }
+
+  menu.addEventListener('click', choose_point);
 }
 
 document.addEventListener("DOMContentLoaded", ready);

@@ -20,6 +20,9 @@ body {
   background-color: #f4f3ee;
   color: #8b8b8b; }
 
+html {
+  scroll-behavior: smooth; }
+
 .text-center {
   text-align: center; }
 
@@ -98,7 +101,8 @@ section, header, footer {
     left: -23%;
     width: 23%;
     height: 100vh;
-    background-color: rgba(28, 23, 26, 0.85); }
+    background-color: rgba(28, 23, 26, 0.97);
+    transition: left .4s ease; }
     .main_header #sideBar.active {
       left: 0; }
     .main_header #sideBar .toggle-btn {
@@ -113,7 +117,7 @@ section, header, footer {
           font-size: 45px;
           transition: transform .5s ease; }
           .main_header #sideBar .toggle-btn i.fa-times:hover {
-            transform: rotate(90deg); }
+            transform: rotate(90deg) rotateX(0); }
     .main_header #sideBar .menu {
       height: 100%;
       margin: 0;
@@ -184,11 +188,23 @@ section, header, footer {
       min-height: 22vh; }
     .welcome .container .welcome-right .bigger_welcome_tasty {
       grid-column: 1/4;
-      grid-row: 1/7; }
+      grid-row: 1/7;
+      background-image: url("../img/1.jpg");
+      background-size: cover;
+      background-position: center;
+      transition: background-image .9s ease; }
+      .welcome .container .welcome-right .bigger_welcome_tasty.bigger_2 {
+        background-image: url("../img/main3.jpg"); }
     .welcome .container .welcome-right .smaller_welcome_tasty {
       z-index: 1;
       grid-column: 3/7;
-      grid-row: 3/8; }
+      grid-row: 3/8;
+      background-image: url("../img/drink.jpg");
+      background-size: cover;
+      background-position: center;
+      transition: background-image .9s ease; }
+      .welcome .container .welcome-right .smaller_welcome_tasty.smaller_2 {
+        background-image: url("../img/4.jpg"); }
 
 .simple-caption span {
   font-family: 'Monsieur La Doulaise', cursive;

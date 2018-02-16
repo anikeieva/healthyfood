@@ -4,13 +4,17 @@ function ready() {
   var smallerWelcomeTasty = document.getElementsByClassName('smaller_welcome_tasty')[0];
 
   function newImages() {
-    biggerWelcomeTasty.style.backgroundImage = 'url(https://anikeieva.github.io/healthyfood.github.io/app/img/main3.jpg)';
-    smallerWelcomeTasty.style.backgroundImage = 'url(https://anikeieva.github.io/healthyfood.github.io/app/img/4.jpg)';
+    biggerWelcomeTasty.classList.toggle('bigger_2');
+    smallerWelcomeTasty.classList.toggle('smaller_2');
+    // biggerWelcomeTasty.style.backgroundImage = 'url(https://anikeieva.github.io/healthyfood.github.io/app/img/main3.jpg)';
+    // smallerWelcomeTasty.style.backgroundImage = 'url(https://anikeieva.github.io/healthyfood.github.io/app/img/4.jpg)';
   }
 
   function oldImages() {
-    biggerWelcomeTasty.style.backgroundImage = 'url(https://anikeieva.github.io/healthyfood.github.io/app/img/1.jpg)';
-    smallerWelcomeTasty.style.backgroundImage = 'url(https://anikeieva.github.io/healthyfood.github.io/app/img/drink.jpg)';
+    biggerWelcomeTasty.classList.toggle('bigger_2');
+    smallerWelcomeTasty.classList.toggle('smaller_2');
+    // biggerWelcomeTasty.style.backgroundImage = 'url(https://anikeieva.github.io/healthyfood.github.io/app/img/1.jpg)';
+    // smallerWelcomeTasty.style.backgroundImage = 'url(https://anikeieva.github.io/healthyfood.github.io/app/img/drink.jpg)';
   }
 
   var counter = 1;
