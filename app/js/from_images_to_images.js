@@ -1,20 +1,20 @@
 function ready() {
-  var welcomeRight = document.getElementsByClassName('welcome-right')[0];
-  var biggerWelcomeTasty = document.getElementsByClassName('bigger_welcome_tasty')[0];
-  var smallerWelcomeTasty = document.getElementsByClassName('smaller_welcome_tasty')[0];
+  var welcomeSectionRight = document.getElementsByClassName('welcome-section__right')[0];
+  var tastyBigger = document.getElementsByClassName('tasty-bigger')[0];
+  var tastySmaller = document.getElementsByClassName('tasty-smaller')[0];
 
   function newImages() {
-    biggerWelcomeTasty.classList.toggle('bigger_2');
-    smallerWelcomeTasty.classList.toggle('smaller_2');
-    // biggerWelcomeTasty.style.backgroundImage = 'url(https://anikeieva.github.io/healthyfood.github.io/app/img/main3.jpg)';
-    // smallerWelcomeTasty.style.backgroundImage = 'url(https://anikeieva.github.io/healthyfood.github.io/app/img/4.jpg)';
+    tastyBigger.classList.toggle('bigger_2');
+    tastySmaller.classList.toggle('smaller_2');
+    // tastyBiggerstyle.backgroundImage = 'url(https://anikeieva.github.io/healthyfood.github.io/app/img/main3.jpg)';
+    // tastySmaller.style.backgroundImage = 'url(https://anikeieva.github.io/healthyfood.github.io/app/img/4.jpg)';
   }
 
   function oldImages() {
-    biggerWelcomeTasty.classList.toggle('bigger_2');
-    smallerWelcomeTasty.classList.toggle('smaller_2');
-    // biggerWelcomeTasty.style.backgroundImage = 'url(https://anikeieva.github.io/healthyfood.github.io/app/img/1.jpg)';
-    // smallerWelcomeTasty.style.backgroundImage = 'url(https://anikeieva.github.io/healthyfood.github.io/app/img/drink.jpg)';
+    tastyBigger.classList.toggle('bigger_2');
+    tastySmaller.classList.toggle('smaller_2');
+    // tastyBiggery.style.backgroundImage = 'url(https://anikeieva.github.io/healthyfood.github.io/app/img/1.jpg)';
+    // tastySmaller.style.backgroundImage = 'url(https://anikeieva.github.io/healthyfood.github.io/app/img/drink.jpg)';
   }
 
   var counter = 1;

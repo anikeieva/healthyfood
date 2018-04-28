@@ -1,5 +1,5 @@
 @media only screen and (max-width : 1400px)
-  .main_header
+  .header
     #sideBar
       left: -35%
       width: 35%
@@ -9,118 +9,120 @@
     grid-template-columns: 1fr 1fr
     grid-template-rows: 1fr 1fr
     grid-template-areas: "f th" "s s"
-    .galery-item
+    .galery__item
       min-height: 33vh
-      &.first
+      &.galery__item_first
         grid-area: f
-      &.second
+      &.galery__item_second
         grid-area: s
-      &.third
+      &.galery__item_third
         grid-area: th
 
 
 @media only screen and (max-width : 992px)
   .blog-section
-    .container
-      .blog-content
+    .content-section__container
+      .blog-section__content
         grid-template-columns: 1fr
         grid-template-rows: 1fr 1fr 1.5fr
         grid-template-areas: "r" "r" "l"
-        .blog-item
+        .blog-section__item
           min-height: 0
-          &.left
+          &.blog-section__item-left
             grid-area: l
-          &.right
+          &.blog-section__item-right
             grid-area: r
-  .welcome
-    .container
-      .welcome-right
+  .welcome-section
+    .content-section__container
+      .welcome-section__right
         padding: 0 50px
 
   .services-section
-    .container
-      .services-container
+    .content-section__container
+      .services-section__container
         grid-template-columns: 1fr 1fr
         grid-template-rows: 1fr 1fr
         grid-row-gap: $gutter
 
 @media only screen and (max-width : 768px)
-  .main_header
+  .header
     padding-left: 45px
     padding-right: 45px
     #sideBar
       left: -60%
       width: 60%
 
-  .welcome
-    .container
+  .welcome-section
+    .content-section__container
       padding: 0 40px
       grid-column-gap: 30px
-      .welcome-left
+      .welcome-section__left
         padding: 0
-      .welcome-right
+      .welcome-section__right
         & > div
           min-height: 18vh
           padding: 0
 
   .blog-section
-    .container
-      .blog-content
-        .blog-item.right
+    .content-section__container
+      .blog-section__content
+        .blog-section__item.blog-section__item-right
           margin: 0 30px
 
-  .menu-section
-    .container
+  .restaurant-menu-section
+    .content-section__container
       grid-template-columns: 1fr
       grid-template-rows: 1fr 1fr 1.5fr
       grid-template-areas: "m" "m" "d"
       grid-row-gap: 40px
-      .menu-item
+      .restaurant-menu-section__item-img
         grid-area: m
-      .dishes-item
+      .restaurant-menu-section__item-dishes
         grid-area: d
 
   .form-section
-    .container
+    .content-section__container
       padding: 0 30px
 
 @media only screen and (max-width : 650px)
-  .welcome
-    .container
-      .welcome-right
+  .welcome-section
+    .content-section__container
+      .welcome-section__right
         padding: 0 35px
 
 @media only screen and (max-width : 550px)
   .content-section
     padding: 60px 0
+    .angle
+      top: 15px
 
   .galery
     grid-template-columns: 1fr
     grid-template-rows: 1fr 1fr 1fr
     grid-template-areas: "f" "s" "th"
-    .galery-item
+    .galery__item
       min-height: 33vh
-      &.first
+      &.galery__item_first
         grid-area: f
-      &.second
+      &.galery__item_second
         grid-area: s
-      &.third
+      &.galery__item_third
         grid-area: th
 
-  .welcome
-    .container
+  .welcome-section
+    .content-section__container
       grid-template-columns: repeat(6, 1fr)
       grid-template-rows: 1fr 1.5fr
       grid-row-gap: $gutter
       grid-template-areas: "l l l l l l" ". r r r r ."
       text-align: center
-      .welcome-left
+      .welcome-section__left
         grid-area: l
         grid-row: 1
         height: auto
         p
           padding-top: 20px
-      .welcome-right
+      .welcome-section__right
         padding: 0 30px
         grid-area: r
         grid-row: 2
@@ -129,98 +131,98 @@
           min-height: 0
 
   .menu-section
-    .container
+    .content-section__container
       grid-template-columns: 1fr
       grid-template-rows: 1fr 1fr
       grid-template-areas: "m" "d"
 
   .blog-section
-    .container
-      .blog-content
+    .content-section__container
+      .blog-section__content
         grid-template-columns: 1fr
         grid-template-rows: 1fr 1fr
         grid-template-areas: "r" "l"
 
 @media only screen and (max-width : 510px)
-  .main_header
-    .header-caption
+  .header
+    .header__caption
       padding-top: 50px
       grid-template-columns: 1fr
       grid-template-rows: 1fr
       grid-column-gap: 0
       grid-row-gap: 50px
-      .caption_healthy
+      .header__caption_healthy
         text-align: center
-      .caption_food
+      .header__caption_food
         text-align: center
         grid-column: 1
         grid-row: 2
 
-  .welcome
-    .container
-        .welcome-right
+  .welcome-section
+    .content-section__container
+        .welcome-section__right
           padding: 0
 
 @media only screen and (max-width : 480px)
-  .main_header
+  .header
     #sideBar
       left: -80%
       width: 80%
       .toggle-btn
         left: 108%
 
-  .welcome
-    .container
+  .welcome-section
+    .content-section__container
       grid-template-rows: 1fr 1fr
 
   .services-section
-    .container
-      .services-container
+    .content-section__container
+      .services-section__container
         grid-template-columns: 1fr
         grid-template-rows: repeat(4, 1fr)
         grid-row-gap: $gutter
 
-  .menu-section
-    .container
-      .menu-item
+  .restaurant-menu-section
+    .content-section__container
+      .restaurant-menu-section__item-img
         margin: 0
-      .dishes-item
+      .restaurant-menu-section__item-dishes
         padding: 0
 
   .blog-section
-    .container
-      .blog-content
-        .blog-item.right
+    .content-section__container
+      .blog-section__content
+        .blog-section__item.blog-section__item-right
           margin: 0
-        .blog-item.left
+        .blog-section__item.blog-section__item-left
           padding: 0
 
 
 @media only screen and (max-width : 370px)
-  .welcome
-    .container
+  .welcome-section
+    .content-section__container
       grid-template-columns: 1fr
       grid-template-rows: 1fr 1fr
       grid-template-areas: "l" "r"
-      .welcome-right
+      .welcome-section__right
         padding: 0 30px
 
 // Horisontal
 @media only screen and (max-height : 580px)
-  .main_header
+  .header
     min-height: 100vh
 
-  .welcome
-    .container
-      .welcome-right > div
+  .welcome-section
+    .content-section__container
+      .welcome-section__right > div
         min-height: 40vh
 
   .galery
-    .galery-item
+    .galery__item
       min-height: 50vh
 
   .reservation-section
-    .reservation-content
+    &__content
       min-height: 99vh
 
   .location-section
@@ -228,8 +230,8 @@
 
 @media only screen and (max-height : 414px)
   .form-section
-    .container
-      .form-container
+    .content-section__container
+      .form-section__container
         grid-row-gap: 15px
         h4
           margin: 0

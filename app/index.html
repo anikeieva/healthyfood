@@ -8,95 +8,111 @@
 </head>
 <body>
 
-  <header class="main_header grid">
+  <header class="header grid">
 			<a class="anchor" name="header"></a>
 			<div id="sideBar">
 				<div class="toggle-btn">
 					<i id="menu-icon"class="fa fa-bars" aria-hidden="true"></i>
 				</div>
-				<div class="menu grid">
-					<a href="#welcome" class="grid">About</a>
-					<a href="#galery" class="grid">Galery</a>
-					<a href="#services" class="grid">Main Services</a>
-					<a href="#reservation" class="grid">Make Reservation</a>
-					<a href="#menu" class="grid">Menu</a>
-					<a href="#location" class="grid">Location</a>
-					<a href="#blog" class="grid">Blog</a>
-					<a href="#contacts" class="grid">Contacts</a>
-				</div>
+				<ul class="menu grid">
+					<li class="menu__item grid">
+						<a href="#go-to-welcome" class="menu__link">About</a>
+					</li>
+					<li class="menu__item grid">
+						<a href="#go-to-galery" class="menu__link">Galery</a>
+					</li>
+					<li class="menu__item grid">
+						<a href="#go-to-services" class="menu__link">Main Services</a>
+					</li>
+					<li class="menu__item grid">
+						<a href="#go-to-reservation" class="menu__link">Make Reservation</a>
+					</li>
+					<li class="menu__item grid">
+						<a href="#go-to-restaurant-menu" class="menu__link">Menu</a>
+					</li>
+					<li class="menu__item grid">
+						<a href="#go-to-location" class="menu__link">Location</a>
+					</li>
+					<li class="menu__item grid">
+						<a href="#go-to-blog" class="menu__link">Blog</a>
+					</li>
+					<li class="menu__item grid">
+						<a href="#go-to-contacts" class="menu__link">Contacts</a>
+					</li>
+				</ul>
 			</div>
 
-			<div class="header-caption grid">
-				<span class="caption_healthy">Healthy</span>
-				<span class="caption_food">food</span>
+			<div class="header__caption grid">
+				<span class="header__caption_healthy">Healthy</span>
+				<span class="header__caption_food">food</span>
 			</div>
 
   </header>
 
-	<section class="content-section welcome">
-		<a class="anchor" name="welcome"></a>
-		<div class="container grid">
-			<a href="#" class="welcome-left">
+	<section class="content-section welcome-section">
+		<a class="anchor" name="go-to-welcome"></a>
+		<div class="content-section__container grid">
+			<a href="#" class="welcome-section__left">
 				<div class="simple-caption">
 					<span>Welcome</span>
 					<h2>to the Helthy food</h2>
 				</div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
 			</a>
-			<div class="welcome-right grid">
-				<div class="bigger_welcome_tasty"></div>
-				<div class="smaller_welcome_tasty"></div>
+			<div class="welcome-section__right grid">
+				<div class="tasty-bigger"></div>
+				<div class="tasty-smaller"></div>
 			</div>
 		</div>
 	</section>
 
 	<section class="galery-section galery grid">
-		<a class="anchor" name="galery"></a>
-		<div class="galery-item first" style="background-image: url('img/dishes/soup.jpg'); background-size: cover; background-position: center;"></div>
-		<div class="galery-item grid second" style="background-image: url('img/dishes/salmon.jpg'); background-size: cover; background-position: center;">
+		<a class="anchor" name="go-to-galery"></a>
+		<div class="galery__item galery__item_first" style="background-image: url('img/dishes/soup.jpg'); background-size: cover; background-position: center;"></div>
+		<div class="galery__item grid galery__item_second" style="background-image: url('img/dishes/salmon.jpg'); background-size: cover; background-position: center;">
 			<a class="simple-caption item">
 				<span>Look at</span>
 				<h2>the Gallery</h2>
 			</a>
 		</div>
-		<div class="galery-item third" style="background-image: url('img/dishes/3.jpg'); background-size: cover; background-position: center;"></div>
+		<div class="galery__item galery__item_third" style="background-image: url('img/dishes/3.jpg'); background-size: cover; background-position: center;"></div>
 	</section>
 
 	<section class="content-section services-section">
-		<a class="anchor" name="services"></a>
-		<div class="container grid">
+		<a class="anchor" name="go-to-services"></a>
+		<div class="content-section__container grid">
 			<div class="simple-caption item">
 				<span>Main</span>
 				<h2>SERVICES</h2>
 			</div>
-			<div class="services-container grid">
-				<a href="#" class="services-item grid">
-					<span class="services-item-img breakfast"></span></span>
-					<span class="services-item-content grid">
+			<div class="services-section__container grid">
+				<a href="#" class="services-section__item grid">
+					<span class="services-section__item-img services-section_img-breakfast"></span></span>
+					<span class="services-section__item-content grid">
 						<h4>Breakfast</h4>
 						<p>Lorem ipsum dolor sit amet  outline: none, consectetur adipisicing elit, sed do eiusmod tempor. Ut enim ad minim veniam...</p>
 					</span>
 				</a>
 
-				<a href="#" class="services-item grid">
-					<span class="services-item-img lunch"></span>
-					<span class="services-item-content grid">
+				<a href="#" class="services-section__item grid">
+					<span class="services-section__item-img services-section_img-lunch"></span>
+					<span class="services-section__item-content grid">
 						<h4>Lunch</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. Ut enim ad minim veniam...</p>
 					</span>
 				</a>
 
-				<a href="#" class="services-item grid">
-					<span class="services-item-img dinner"></span>
-					<span class="services-item-content grid">
+				<a href="#" class="services-section__item grid">
+					<span class="services-section__item-img services-section_img-dinner"></span>
+					<span class="services-section__item-content grid">
 						<h4>Dinner</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. Ut enim ad minim veniamt...</p>
 					</span>
 				</a>
 
-				<a href="#" class="services-item grid">
-					<span class="services-item-img custom"></span>
-					<span class="services-item-content grid">
+				<a href="#" class="services-section__item grid">
+					<span class="services-section__item-img services-section_img-custom"></span>
+					<span class="services-section__item-content grid">
 						<h4>Custom</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. Ut enim ad minim veniam...</p>
 					</span>
@@ -106,7 +122,7 @@
 	</section>
 
 	<section class="galery-section grid reservation-section">
-		<a name="reservation" class="reservation-content grid" style="background-image: url('img/reservation.jpeg'); background-size: cover; background-position: center;">
+		<a name="go-to-reservation" class="reservation-section__content grid" style="background-image: url('img/reservation.jpeg'); background-size: cover; background-position: center;">
 			<div class="simple-caption item">
 				<span>Make</span>
 				<h2>RESERVATIONS</h2>
@@ -114,18 +130,18 @@
 		</a>
 	</section>
 
-	<section class="content-section menu-section">
-		<a class="anchor" name="menu"></a>
-		<div class="container grid">
+	<section class="content-section restaurant-menu-section">
+		<a class="anchor" name="go-to-restaurant-menu"></a>
+		<div class="content-section__container grid">
 
-				<a class="menu-item grid" style="background-image: url('img/dishes/Healthy-Ground.jpg')">
+				<a class="restaurant-menu-section__item-img grid" style="background-image: url('img/dishes/Healthy-Ground.jpg')">
 					<div class="simple-caption item">
 						<span>Our</span>
 						<h2>MENU</h2>
 					</div>
 				</a>
 
-				<div class="dishes-item grid">
+				<div class="restaurant-menu-section__item-dishes grid">
 					<div class="simple-caption item">
 						<span>Delicious</span>
 						<h2>Dishes</h2>
@@ -138,8 +154,8 @@
 	</section>
 
 	<section class="galery-section location-section grid">
-		<a class="anchor" name="location"></a>
-		<div class="location-content">
+		<a class="anchor" name="go-to-location"></a>
+		<div class="location-section__content">
 			<h4>LOCATION</h4>
 			<p>Lorem ipsum dolor sit amet</p>
 			<h4>HOURS</h4>
@@ -149,16 +165,16 @@
 	</section>
 
 	<section class="content-section blog-section">
-		<a class="anchor" name="blog"></a>
-		<div class="container grid">
-			<div class="blog-content grid">
-				<div class="blog-item left grid">
-					<h4>No palm oil? Why home cookies is better?</h4>
+		<a class="anchor" name="go-to-blog"></a>
+		<div class="content-section__container grid">
+			<div class="blog-section__content grid">
+				<div class="blog-section__item blog-section__item-left grid">
+					<h4>No palm oil? Why home cookies are better?</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, et dolore magna aliqua. Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...</p>
 					<a href="#" class="button">View all articles</a>
 				</div>
 
-				<div class="blog-item right" style="background-image: url('img/girl_drink.png')">
+				<div class="blog-section__item blog-section__item-right" style="background-image: url('img/girl_drink.png')">
 				</div>
 
 			</div>
@@ -166,12 +182,12 @@
 	</section>
 
 	<section class="content-section form-section">
-		<a class="anchor" name="contacts"></a>
+		<a class="anchor" name="go-to-contacts"></a>
 		<a href="#header" class="angle">
 			<i class="fa fa-angle-up" aria-hidden="true"></i>
 		</a>
-			<div class="container">
-				<form class="form-container grid">
+			<div class="content-section__container">
+				<form class="form-section__container grid">
 					<h4>Want to contact with us? Sent a message</h4>
 					<div>
 						<input type="text" placeholder="Your name" />
@@ -192,10 +208,10 @@
 			</div>
 	</section>
 
-	<footer class="content-section main-footer grid">
-		<div class="container grid">
-			<div class="footer-logo">Helthy/food</div>
-			<div class="footer-copy">~©~</div>
+	<footer class="content-section footer grid">
+		<div class="content-section__container grid">
+			<div class="footer__logo">Helthy/food</div>
+			<div class="footer__copy">~©~</div>
 		</div>
 	</footer>
 
