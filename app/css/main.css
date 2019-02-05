@@ -102,13 +102,14 @@ section, header, footer {
     width: 23%;
     height: 100vh;
     background-color: rgba(28, 23, 26, 0.97);
-    transition: left .4s ease; }
+    transition: left .4s ease;
+    top: 0; }
     .header #sideBar.active {
       left: 0; }
     .header #sideBar .toggle-btn {
       position: absolute;
       left: calc(100% + 30px);
-      top: 3vh;
+      top: 15px;
       cursor: pointer; }
       .header #sideBar .toggle-btn i {
         font-size: 40px;
